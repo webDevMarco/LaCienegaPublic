@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Copse', serif;
+}
+    body{
+  background-color: rgba(232, 232, 232, 1);
+}
+
+header{
+    background-image: url('grocerystore2.jpg');
+    background-size: cover;
+    min-height: 500px;
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+h4{
+    font-size: 80%;
+}
+/* Buttons */
+.button {
+    display: flex;
+    height: 50px;
+    margin-left: 50px;
+    background: #001b95;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #008168;
+  }
+  
+  .button:active {
+    background: #006e58;
+  }
+  
+  .button__text {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+  }
+  .button-flex{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3%;
+  }
+
+  /* Sale Items Navigation */
+
+.list-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-navigation-boxes{
+  position: relative;
+    margin: 10px;
+    font-size: 200%;
+    height: 390px;
+    width: 300px;
+    border: 3px solid rgb(74, 162, 206);
+    background-color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 150%;
+}
+.list-items-information{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(74, 162, 206);
+}
+.list-items-information h4{
+  width: 100%;
+}
+
+.items-images-size{
+    margin-top: 2%;
+    height: 150px;
+}
+.week-sale{
+  font-size: 67%;
+  color: crimson;
+}
+
+
+
+/* Information */
+
+
+/* LOCATION */
+.location-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.location-box-items{
+  margin-left: 10px;
+  height: 100%;
+}
+
+.location-box::after{
+  content: '';
+  border-bottom: 1px solid;
+}
+
+.location-box a{
+  text-decoration: none;
+  color: black;
+}
+
+
+  /* CONTACT & DELIVERY */
+
+  .contact{
+      width: 15%;
+      text-align: center;
+  }
+
+  .contact p{
+      font-weight: bold;
+  }
+  
+
+/* SCHEDULED HOURS */
+
+.table-mobile{
+  display: none;
+  border: 1px solid black;
+}
+
+table{
+  width: 50%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  background-color: white;
+}
+table tr{
+  border-top: 2px solid black;
+}
+table tr th{
+  padding: 1%;
+
+}
+td{
+  padding: 2%;
+}
+
+
+
+.owl-container {
+  max-width: 900px;
+  margin: 0 auto;;
+}
+
+.item {
+  background: #188bc0;
+  color: #fff;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item h4 {
+  font-size: 2rem;
+}
+
+
+.owl-nav {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+
+
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+  background: none !important;
+  outline: none !important;
+  opacity: 1;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  outline: none;
+  opacity: 0.6;
+  transition: all .5s ease;
+}
+
+.owl-dots {
+  margin-top: 1rem;
+}
+
+.owl-dot {
+  outline: none;
+}
+
+.owl-dot.active, .owl-dot:hover {
+  transition: all .2s ease;
+  transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 600px) {
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    display: none;
+  }
+}
